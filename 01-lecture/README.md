@@ -16,7 +16,7 @@
 - Study the code css-intro
 - Do the exercises in [profile-page-exercises.md](./profile-page-exercises.md)
 ## 5. Git & Github intro (If we have time)
-- Create Github account
+- Create Github account: https://github.com/
 - Configurations, to connect local git with github account
     - git config --global user.name "Your Name"
     - git config --global user.email "your_email@example.com"
