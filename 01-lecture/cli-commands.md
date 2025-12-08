@@ -24,3 +24,14 @@ ctrl + c - Aborts/stops a process running in the Command Line Interface (CLI).
 
 code - Command to open a specific file in VS Code, e.g., code test.txt. Running 
 code . opens the entire current folder in VS Code.
+
+
+### Vim intro - Get familiar just enough to know how to escape it. Just in case you find your selfs stuck in the vim editor mode.
+
+To open a file with vim: vim "filename"
+
+To edit a file when you are in vim, press "i" to enter insert mode
+
+To exit insert mode, press "esc"
+
+To save and close the file ":wq"

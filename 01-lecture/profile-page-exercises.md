@@ -1,6 +1,9 @@
-## 📄 My Digital CV Page: Exercise Instructions
+## 📄 My Digital Profile Page: Exercise Instructions
 
-This exercise combines the use of the **Command Line Interface (CLI)**, **Git**, and fundamental **HTML/CSS** concepts (Semantics, Specificity, Selectors) to build a basic personal profile page.
+This exercise of basic personal profile page combines the use of:
+- **Command Line Interface (CLI)**
+- VS code 
+- fundamentals in **HTML/CSS**
 
 ---
 
@@ -10,11 +13,11 @@ This exercise combines the use of the **Command Line Interface (CLI)**, **Git**,
 
 1.  **Create the Project Folder:**
     * Open your terminal (CLI).
-    * Navigate to your desired location (e.g., your Home directory).
+    * Navigate to your desired location (e.g., your main directory for all your projects).
     * Create a new folder for the project and move into it:
         ```bash
-        mkdir my-cv
-        cd my-cv
+        mkdir my-profile
+        cd my-profile
         ```
     * Create the necessary files and folders:
         ```bash
@@ -33,20 +36,20 @@ This exercise combines the use of the **Command Line Interface (CLI)**, **Git**,
 
 ### Part 2: Structure the Content with HTML
 
-**Goal:** Use semantic HTML5 tags, headings, lists, and linking to structure the content.
+**Goal:** Use HTML tags, headings, lists, and linking to structure the content.
 
 1.  **Basic Structure (`index.html`):**
     * Add the basic HTML5 boilerplate (`<!DOCTYPE html>`, `<html>`, etc.).
     * Link your CSS file in the `<head>`: `<link rel="stylesheet" href="css/style.css">`.
 2.  **Main Content (Body):**
-    * **Wrap the entire page content** in a `<div>` with the **ID** `id="cv-page"`.
+    * **Wrap the entire page content** in a `<div>` with the **ID** `id="profile-page"`.
     * **Header:** Use a **`<header>`** tag at the top. Inside it, place an `<h1>` with your name.
     * **Image and Intro:**
         * Place your profile image using the `<img>` tag and give it the **CLASS** `.profile-image`.
         * Write a short "About Me" paragraph using a `<p>` tag.
     * **CV Sections:**
         * Divide your CV into sections (e.g., "Experience" and "Education") using `<h2>` headings.
-        * Wrap each section in a **semantically appropriate** tag like **`<article>`** and give it the **CLASS** `.cv-section`.
+        * Wrap each section in a **`<div>`** and give it the **CLASS** `.cv-section`.
     * **Lists:**
         * Use an **`<ol>`** (ordered list) for your **Education** steps.
         * Use a **`<ul>`** (unordered list) for your **Skills** (e.g., "HTML", "CSS", "JavaScript").
@@ -62,7 +65,7 @@ This exercise combines the use of the **Command Line Interface (CLI)**, **Git**,
 1.  **Basic Styling (`css/style.css`):**
     * Apply a `background-color` to the **`body`** tag (Type Selector).
 2.  **Layout with ID:**
-    * Use the **ID selector** `#cv-page` to define the main content area. Set its width (e.g., `width: 800px;`) and center it (`margin: auto;`).
+    * Use the **ID selector** `#profile-page` to define the main content area. Set its width (e.g., `width: 800px;`) and center it (`margin: auto;`).
 3.  **Consistent Styling with Class:**
     * Use the **Class selector** `.cv-section` to give all experience and education sections a consistent `border` and some `padding`.
     * Use the class `.profile-image` to give the image rounded corners (`border-radius: 50%;`).
@@ -73,37 +76,6 @@ This exercise combines the use of the **Command Line Interface (CLI)**, **Git**,
 
 ---
 
-### Part 4: Version Control (Git & GitHub)
+### Part 4: Version Control with Git & GitHub (if we have time to cover it today)
 
 **Goal:** Save the work using commits and push it to GitHub.
-
-1.  **Initialize and Save:**
-    * Go back to the terminal (make sure you are in the `my-cv` folder).
-    * Initialize Git:
-        ```bash
-        git init
-        ```
-    * Stage all files (HTML, CSS, Image):
-        ```bash
-        git add .
-        ```
-    * Create your first commit:
-        ```bash
-        git commit -m "Initial CV page setup: structure, content and styling links"
-        ```
-2.  **Link and Push:**
-    * Go to GitHub in your browser and create a new empty repository (e.g., `my-cv`).
-    * Run the commands provided by GitHub to link your local folder to the remote repository (Example commands below):
-        ```bash
-        git remote add origin [Your GitHub Repo URL]
-        git push -u origin main
-        ```
-3.  **Make a Change and Push Again:**
-    * In VS Code, make a minor change (e.g., change the body background color).
-    * Repeat the process to save the change:
-        ```bash
-        git status
-        git add .
-        git commit -m "Updated color palette for better contrast"
-        git push
-        ```
