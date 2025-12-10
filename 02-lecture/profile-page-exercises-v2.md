@@ -1,42 +1,29 @@
-## 🚀 My Digital Profile Page (Advanced Styling & Branching)
+## 🚀 My Digital Profile Page V2 (Atomic Git Workflow & Advanced CSS)
 
-This exercise combines CLI usage, foundational HTML/CSS knowledge (including the Box Model and Semantics), and a basic Git branching workflow.
+**Context:** This is a **continuation** of the initial setup. Your files (`index.html`, `css/style.css`, and the Git repository) are already set up, and the initial version has been successfully pushed to GitHub. This exercise focuses on **practicing an atomic Git branching workflow** alongside applying your new HTML/CSS knowledge.
 
 ---
 
-### Part 1: Set Up the Project (CLI & Initial Commit)
+### Part 1: Start Branching (Isolate Development. Should be repeated for every new feature/development)
 
-**Goal:** Create the basic project structure and establish version control baseline.
+**Goal:** Ensure all new development is done safely on a dedicated feature branch.
 
 1.  **Create the Project Folder (CLI):**
     * Open your terminal (CLI).
     * Navigate to your desired location.
-    * Create a new folder and move into it:
-        ```bash
-        mkdir my-profile
-        cd my-profile
-        ```
-    * Create necessary files and folders:
-        ```bash
-        mkdir css img
-        touch index.html css/style.css
-        ```
     * Open the project in VS Code:
         ```bash
         code .
         ```
-2.  **Add an Image:**
-    * Place your profile picture (or placeholder) inside the **`img`** folder (e.g., `img/profile.jpg`).
-3.  **Initial Git Commit:**
-    * Initialize the Git repository:
-        ```bash
-        git init
-        ```
-    * Stage and commit the empty files:
-        ```bash
-        git add .
-        git commit -m "feat: Initial project structure setup"
-        ```
+2.  **Ensure you are on the `main` branch:**
+    ```bash
+    git checkout main
+    ```
+3.  **Create a New Feature Branch:**
+    * Create a new branch called `feature/semantic-update` and switch to it.
+    ```bash
+    git checkout -b feature/semantic-update
+    ```
 
 ---
 
@@ -56,10 +43,41 @@ This exercise combines CLI usage, foundational HTML/CSS knowledge (including the
     * **Footer:** Add a **`<footer>`** tag at the very bottom for copyright information.
 
 ---
+### Part 3: **Versioncontroll** (This should be repeted after every completed feature/development)
 
-### Part 3: **Advanced Styling** (Box Model & Display)
+1.  **Commit and merge to main:**
+    * Stage and commit the display flow update.
+    ```bash
+    git add .
+    git commit -m "style: Used display: inline-block for skills list for horizontal flow"
+    ```
+2.  **Switch Back to Main:**
+    ```bash
+    git checkout main
+    ```
+3.  **Merge the Feature Branch:**
+    * Integrate all the atomic commits from your feature branch into `main`.
+    ```bash
+    git merge feature/semantic-update
+    ```
 
-**Goal:** Apply the Box Model properties (`padding`, `margin`, `border`) and control element flow (`display`) using appropriate CSS units.
+4.  **Publish to GitHub:**
+    * Push the final, merged version to your remote repository.
+    ```bash
+    git push
+    ```
+
+5.  **Clean Up:**
+    * Delete the local feature branch (since the work is complete and merged).
+    ```bash
+    git branch -D feature/semantic-update
+    ```
+---
+
+
+### Part 4: **Advanced Styling** (Box Model and element flow)
+
+**Goal:** Apply the Box Model properties (`padding`, `margin`, `border`) and control element flow (`Display/Flexbox`) using appropriate CSS units.
 
 1.  **Centering and Width (Box Model):**
     * In `css/style.css`, target the main content area (the **`<main>`** tag).
@@ -83,50 +101,4 @@ This exercise combines CLI usage, foundational HTML/CSS knowledge (including the
             border: 1px solid #007bff;
             padding: 5px 10px;
         }
-        ```
-4.  **Image Sizing:**
-    * Ensure the **`.profile-image`** has a fixed size using an absolute unit (e.g., `width: 150px; height: 150px;`).
-
----
-
-### Part 4: Version Control with **Branching Workflow**
-
-**Goal:** Develop the site using a separate branch, commit changes, and merge the final version into the `main` branch.
-
-1.  **Create a Feature Branch:**
-    * Create a new branch called `style-update` and switch to it.
-        ```bash
-        git checkout -b style-update
-        ```
-2.  **Develop and Commit (Iteratively):**
-    * Complete all the HTML structure updates (Part 2).
-    * **Commit 1 (Structure):** Stage and commit these changes:
-        ```bash
-        git add .
-        git commit -m "feat: Applied semantic HTML structure (header, main, section)"
-        ```
-    * Complete all the CSS styling updates (Part 3).
-    * **Commit 2 (Styling):** Stage and commit the final CSS changes:
-        ```bash
-        git add .
-        git commit -m "style: Implemented box model and display properties for layout"
-        ```
-3.  **Merge the Changes:**
-    * Switch back to your main branch:
-        ```bash
-        git checkout main
-        ```
-    * Merge the feature branch into `main`:
-        ```bash
-        git merge style-update
-        ```
-4.  **Publish to GitHub:**
-    * Push the final, merged version to your remote repository on GitHub:
-        ```bash
-        git push -u origin main
-        ```
-5.  **Clean Up:**
-    * Delete the feature branch locally:
-        ```bash
-        git branch -D style-update
         ```
