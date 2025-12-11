@@ -3,7 +3,20 @@
     border: 1px solid #000;
     width: 30%;
     height: 300px;
+}
 
+section {
+    border: 1px solid #000;
+    width: 50px;
+    height: 50px;
+}
+
+
+/* 
+Flexbox container
+*/
+
+#flexbox-container {
     display: flex;
     flex-direction: row; /* row (default) | row-reverse | column | column-reverse;*/
     flex-wrap: wrap-reverse; /* nowrap (default) | wrap | wrap-reverse;*/
@@ -25,8 +38,35 @@
     gap: 10px;
 }
 
-section {
-    border: 1px solid #000;
-    /* width: 50px;
-    height: 50px; */
+
+/* 
+Flexbox items
+*/
+
+#flexbox-items {
+    display: flex;
+}
+
+.box6 {
+    /* The lower the number the higher priority */
+    order: -5; /* default 0 */
+}
+
+
+.box8 {
+    flex-grow: 2; /* default 0 */
+    flex-shrink: 10;   /* default 1 */
+    flex-basis: 50px; /* default auto, meaning it inherits the value from width */
+
+    /* Short hand */
+    flex: 2 10 50px; /* flex-grow flex-shrink flex-basis */
+}
+
+.box7 {
+    flex-grow: 1; /* default 0 */
+}
+
+
+.box5 {
+    align-self: center;
 }
