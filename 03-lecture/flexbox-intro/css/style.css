@@ -1,0 +1,32 @@
+
+.container {
+    border: 1px solid #000;
+    width: 30%;
+    height: 300px;
+
+    display: flex;
+    flex-direction: row; /* row (default) | row-reverse | column | column-reverse;*/
+    flex-wrap: wrap-reverse; /* nowrap (default) | wrap | wrap-reverse;*/
+    /* short-hand */
+    flex-flow: row wrap; /* flex-direction flex-wrap */
+
+    /* Determin the spacing between the indiviual items along MAIN-axis determined by the flexdirection */
+    justify-content: flex-start; /* flex-start (default) | flex-end | center | space-between | space-around | space-evenly | start | end | left | right ... + safe | unsafe;*/
+    /* Determin the spacing between the indiviual items along CROSS-axis determined by the flexdirection */
+    align-items: flex-start;  /* stretch (default) | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end + ... safe | unsafe;*/
+    /* Determin the spacing between lines along the cross-axis */
+    align-content:  space-between; /*flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline + ... safe | unsafe;*/
+
+
+    row-gap: 10px;
+    column-gap: 20px;
+    /*Short-hand  */
+    gap: 10px 20px; /* row-gap column gap */
+    gap: 10px;
+}
+
+section {
+    border: 1px solid #000;
+    /* width: 50px;
+    height: 50px; */
+}
