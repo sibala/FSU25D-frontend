@@ -1,0 +1,19 @@
+/* Grids with specific positioning */
+.container {
+    border:1px solid #333;
+    min-height: 300px;
+    width: 600px;
+    margin: 20px;
+}
+
+.item-a {
+    background-color: pink;
+}
+
+.item-b {
+    background-color: rgba(135, 206, 235, 0.5);
+}
+
+.item-c {
+    background-color: orange;
+}
