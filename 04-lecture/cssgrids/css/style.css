@@ -1,5 +1,5 @@
 /* Grids with specific positioning */
-.container {
+.container-1 {
     border:1px solid #333;
     min-height: 300px;
     width: 600px;
@@ -41,4 +41,32 @@
 
     /* shorthand  4 values*/
     grid-area: third-line / 3 / 4 / span 2; /*<name> | <row-start> / <column-start> / <row-end> / <column-end>;*/
+}
+
+
+/* Grids without specific positioning */
+.container-2 {
+    border:1px solid #333;
+    min-height: 300px;
+    width: 600px;
+    margin: 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto; /* auto by default */
+
+    column-gap: 10px; /* gap between columns */
+    row-gap: 10px; /* gap between rows */
+    padding: 10px;
+
+
+    justify-items: stretch; /* start | end | center | stretch (default);*/
+    align-items: stretch; /* start | end | center | stretch (default);*/
+    /* place-items: <align-items> <justify-items>; */
+    place-items: stretch stretch;
+}
+
+
+section {
+    border: 1px solid #666;
 }
