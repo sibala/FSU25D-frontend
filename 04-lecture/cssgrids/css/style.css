@@ -52,7 +52,7 @@
     margin: 20px;
 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */    
     grid-template-rows: auto; /* auto by default */
 
     column-gap: 10px; /* gap between columns */
@@ -69,4 +69,54 @@
 
 section {
     border: 1px solid #666;
+}
+
+/* Grids area */
+.container-3 {
+    border:1px solid #333;
+    min-height: 300px;
+    width: 600px;
+    margin: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+
+
+    /* 
+    Some rules that are required for grid-areas to work:
+    1. All rows need to have equal amount of values
+    2. Must manage all children inside of container, when using grid-areas
+    3. Need declare grid-area in every child, so that it is effected by grid-template-areas
+    4. May only create sections with 4 corners, meaning squares and rectangles
+    */
+    grid-template-areas: 
+        "sidebar header header header "
+        "sidebar main main main"
+        "footer footer footer footer";
+
+    gap: 10px;
+    padding: 10px;
+}
+
+header {
+    background-color: skyblue;
+    grid-area: header;
+}
+
+aside {
+    background-color: beige;
+    grid-area: sidebar;
+}
+
+main {
+    background-color: lightgreen;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+footer {
+    background-color: lightcoral;
+    grid-area: footer;
 }
