@@ -9,11 +9,12 @@
 - Study the code in [media-queries](media-queries)
 - Keep working on the responsive cssgrids layout exercise in group
 - If your group is done with the exercise, keep building on the same grids exercise with Flexbox. Its an extra exercise for those that finished quickly [responsive-flexbox-layout-exercises.pdf](responsive-flexbox-layout-exercises.pdf)
+- Solution for CSS grids/Flexbox exercises: (responsive-cssgrids-and-flexbox-solution)[responsive-cssgrids-and-flexbox-solution]
 
 
 ## 3. Agile Project Methods
 - Agile Project Methodologies [project-methodologies.pptx](project-methodologies.pptx)
-- Creating groups and work on exercise: 
+- Creating groups and work on Group exercise with Trello and Scrum (See lesson about Trello for getting started)
 
 
 ## Reading:
