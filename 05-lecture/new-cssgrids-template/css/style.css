@@ -1,0 +1,21 @@
+/** Not allowed to change this initial CSS code **/
+body {
+	background: url(../img/12_col.gif) center top repeat-y;
+	background-size: 90%;
+}
+/*************************************************/
+
+
+section {
+	border: 1px solid black;
+	min-height: 100px;
+}
+
+#container {
+	width: 89%;
+	margin: 0 auto;
+
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	column-gap: 2%;
+}
