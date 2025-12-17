@@ -11,7 +11,7 @@
 - If your group is done with the exercise, keep building on the same grids exercise with Flexbox. Its an extra exercise for those that finished quickly [responsive-flexbox-layout-exercises.pdf](responsive-flexbox-layout-exercises.pdf)
 
 
-## 3. Agile Methods
+## 3. Agile Project Methods
 - Agile Project Methodologies [project-methodologies.pptx](project-methodologies.pptx)
 - Creating groups and work on exercise: 
 
