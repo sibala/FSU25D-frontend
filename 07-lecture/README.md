@@ -2,7 +2,7 @@
 
 
 ## 1. CSS property: position
-- [Study the code in position](position) 
+- Study the code in [Study the code in position](position) 
 
 ## 2. Menu bar and navigation
 - Study the code in [navigation](navigation) 
