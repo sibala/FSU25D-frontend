@@ -1,0 +1,66 @@
+html {
+     height: 4000px;
+}
+
+body {
+    border: 1px solid black;
+    width: 960px;
+    margin: 20px auto;
+    position: static;
+    height: 2000px;
+}
+
+
+div {
+    height: 100px;
+    width: 100px;
+    background-color: orange;
+    margin: 10px;
+}
+
+
+#static {
+    position: static; /* default value */
+    /* top, left right bottom are not taking effect when position is static */
+    top: 0px;
+    left: 100px;
+}
+
+
+#relative {
+    position: relative;
+    /* top, left right bottom is relative to its original position. */
+    top: 0px;
+    left: 200px;
+}
+
+
+#absolute {
+    position: absolute;
+   /* top, left right bottom is positioned relative to the nearest positioned ancestor 
+    If there is no parent element that is positioned, then the reference point would be the root HTML element
+    
+    A positioned element is anything but static */
+    top: 100px;
+    left: 0px;
+}
+
+
+#fixed {
+    position: fixed;
+   /* top, left right bottom is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. */
+    top: 200px;
+    left: 0px;
+}
+
+#sticky {
+    position: sticky;
+   /* 
+    A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). 
+
+    Notice though it sticks only while the parent element has enought space.
+    Sticky is a kind child that alwase observes the limits of the parent element. Unlike absolute and fixed :)
+    */
+    top: 200px;
+    left: 0px;
+}
