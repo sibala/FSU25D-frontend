@@ -12,7 +12,5 @@
 - [HTML Input Attributes](https://www.w3schools.com/html/html_form_attributes.asp)
 - [Form Validation](https://www.w3schools.com/html/html_form_validation.asp)
 - [HTML Input Form Attributes](https://www.w3schools.com/html/html_form_attributes.asp) *(läs översiktligt)*
-- [HTML Validator](https://validator.w3.org/)
-- [CSS Validator](https://jigsaw.w3.org/css-validator/)
 
 
