@@ -4,4 +4,4 @@ Programmet ska baserat på användarens val be om input för att beräkna den va
 När användaren fått svara med den data som behövs ska en uträkning på arean ska och programmet skriver ut resultatet 
 
 Gör en flowchart och sedan skriva pseudokod innan ni börjar koda.
-/*
+*/
