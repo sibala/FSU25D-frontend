@@ -7,8 +7,8 @@
 - Exercises [variables-&-logical-operations-&-flowcharts-exercises](variables-&-logical-operations-&-flowcharts-exercises)
 
 ## 2. JS comparison & conditions operators
-- Study the code in [js-conditions-comparisons-intro](js-conditions-comparisons-intro) 
-- Exercises [conditions-&-comparisons-exercises](conditions-&-comparisons-exercises)
+- Study the code in [js-conditions-and-comparisons](js-conditions-and-comparisons) 
+- Exercises [conditions-and-comparisons-exercises](conditions-and-comparisons-exercises)
 
 
 ## Reading
