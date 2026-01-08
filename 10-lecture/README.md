@@ -11,6 +11,10 @@
 - Exercises [lab1](lab1)
 
 
+## 3. Extra JS exercises. Either do them when done with lab1 or code a fun side project
+- [extra-while-loops-exercises](extra-while-loops-exercises) 
+- [extra-for-loops-exercises](extra-for-loops-exercises) 
+
 
 ## Reading
 - [JS Switch](https://www.w3schools.com/js/js_switch.asp)

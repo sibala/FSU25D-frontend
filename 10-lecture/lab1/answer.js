@@ -33,7 +33,7 @@ let card1 = 4;
 let card2 = 2;
 let card3 = 7;
 let card4 = 1;
-let card5 = 10;
+let card5 = 11;
 
 let result = card1 + card2 + card3 + card4 + card5
 ANSWER = result;
