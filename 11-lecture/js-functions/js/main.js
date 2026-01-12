@@ -90,6 +90,7 @@ function calculator(height, width, calcType = "+") { // the calcType parameter i
     }
 }
 
+// May exclude the third parameter because it's declared with a default value
 console.log(`5 + 6 = ${calculator(5, 6)}`)               // 11
 console.log(`10 - 6 = ${calculator(10, 6, "-")}`)       // 4
 console.log(`10 / 5 = ${calculator(10, 5, "/")}`)       // 2
