@@ -45,8 +45,8 @@ console.log(myArray.length) // 8
 
 // Array is very similar to how strings are treaded. With tools such as .length, .charAt()
 let string = "Hello";
-console.log(string.length); // 5
-console.log(string.charAt(0)); // Hello
+console.log(string.length);     // 5
+console.log(string.charAt(0));  // H
 
 
 
