@@ -15,8 +15,10 @@
 - [Array methods](https://www.w3schools.com/js/js_array_methods.asp)
 - [Array search](https://www.w3schools.com/js/js_array_search.asp)
 - [Array sort](https://www.w3schools.com/js/js_array_sort.asp)
-- [Loops](https://www.w3schools.com/js/js_loop_for.asp)
 - [Array iterations](https://www.w3schools.com/js/js_array_iteration.asp)
 - [Array reference](https://www.w3schools.com/js/js_array_reference.asp)
+- [For loop](https://www.w3schools.com/jsref/jsref_for.asp)
+- [For in](https://www.w3schools.com/jsref/jsref_forin.asp)
+- [For of](https://www.w3schools.com/jsref/jsref_forof.asp)
 
 
