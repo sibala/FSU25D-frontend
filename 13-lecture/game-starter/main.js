@@ -50,9 +50,9 @@ window.addEventListener("DOMContentLoaded", function() {
      */
     gameBlocks = [
       19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,
-      19,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,19,
-      19,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,19,
-      19,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,19,
+      19,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,26,24,10,10,10,10,10,19,
+      19,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,26,24,10,10,10,10,10,19,
+      19,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,25,25,10,10,10,10,10,19,
       19,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,12,13,10,10,10,10,19,
       19,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,12,10,10,10,10,10,19,
       19,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,12,10,10,10,10,10,19,
@@ -79,11 +79,21 @@ window.addEventListener("DOMContentLoaded", function() {
      * Draw the initial gameplan
     */
    function drawGamePlan(gameArea, gameBlocks) {
-     let i,e,b;
-     for(i = 0; i < gameArea.length; i++) {
+     let e;
+     for(let i = 0; i < gameArea.length; i++) {
+       // i = 0
+       // e = <div></div>
        e = document.createElement('div');
-       e.innerHTML = '';
-       e.className = 'tile t' + gameArea[i] + (gameBlocks[i] ? ' b' + gameBlocks[i] : '');
+
+       // e = <div class="tile t13 b19"></div>
+       //gameArea[0]
+       //gameBlocks[0]
+       e.className = 'tile t' + gameArea[i] + ' b' + gameBlocks[i];
+
+       // e = <div class="tile t13 b19" id="n0"></div>
+       // e = <div class="tile t14 b19" id="n1"></div>
+       // e = <div class="tile t12 b19" id="n2"></div>
+       // e = <div class="tile t13 b19" id="n3"></div>
        e.id = 'n' + i;
        area.appendChild(e);
       } 

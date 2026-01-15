@@ -310,6 +310,11 @@ body {
   color: #333333;
   text-decoration: underline;
 }
+
+
+
+
+
 /**
  * Here comes specific style for a certain test program.
  */
@@ -324,7 +329,7 @@ body {
   z-index: 10;
   width: 32px;
   height: 32px;
-  background-image: url(img/sprite_mickey_mos_mini.png);
+  background-image: url(img/hill_giant_new.png);
   background-repeat: no-repeat;
   -webkit-transition-property: left,top;
   -moz-transition-property: left,top;
@@ -342,9 +347,17 @@ body {
   -o-transition-timing-function: ease;
   transition-timing-function: ease;
 }
-.baddie.up {background-position: -96px 0;}
+
+/* Use this code when working with sprite images */
+/* .baddie.up {background-position: -96px 0;}
 .baddie.down {background-position: -64px 0;}
 .baddie.left {background-position: -32px 0;}
+.baddie.right {background-position: 0 0;} */
+
+/* Use this code when working with normal image */
+.baddie.up {background-position: 0 0;}
+.baddie.down {background-position: 0 0;}
+.baddie.left {background-position: 0 0;}
 .baddie.right {background-position: 0 0;}
 /** --------------------------------------------------------------
  * Boulder Dash Gameplan
@@ -371,3 +384,8 @@ body {
 .b17{background-image:url(img/tiles/passage/open_door.png);background-color:#bbb;}
 .b18{background-image:url(img/tiles/passage/closed_door.png);}
 .b19{background-image:url(img/tiles/wall/brick_brown-vines_1.png);}
+
+.b24{background-image:url(img/tiles/water/shoals_shallow_water_5.png);}
+.b25{background-image:url(img/tiles/water/shoals_shallow_water_6.png);}
+.b26{background-image:url(img/tiles/water/shoals_shallow_water_7.png);}
+.b27{background-image:url(img/tiles/water/shoals_shallow_water_8.png);}
