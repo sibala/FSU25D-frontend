@@ -376,14 +376,15 @@ body {
 .t21{background-image:url(img/tiles/floor/grass_full_old.png);}
 .t22{background-image:url(img/tiles/floor/grass_southwest_old.png);}
 .t23{background-image:url(img/tiles/floor/grass_south_old.png);}
+.t24{background-image:url(img/tiles/passage/open_door.png);background-color:#bbb;}
 
 .b11{background-image:url(img/tiles/wall/metal_wall.png);}
 .b12{background-image:url(img/tiles/wall/crystal_wall02.png);}
 .b13{background-image:url(img/tiles/wall/mirrored_wall_old.png);}
 .b14{background-image:url(img/tiles/wall/green_crystal_wall.png);background-color:green;}
-.b17{background-image:url(img/tiles/passage/open_door.png);background-color:#bbb;}
 .b18{background-image:url(img/tiles/passage/closed_door.png);}
 .b19{background-image:url(img/tiles/wall/brick_brown-vines_1.png);}
+.b20{background-image:url(img/tiles/items/rod_1_old.png), url(img/tiles/floor/grass_1_old.png);}
 
 .b24{background-image:url(img/tiles/water/shoals_shallow_water_5.png);}
 .b25{background-image:url(img/tiles/water/shoals_shallow_water_6.png);}

@@ -5,12 +5,12 @@ window.addEventListener("DOMContentLoaded", function() {
   'use strict';
   let rockford = document.getElementById('baddie1'),
     area = document.getElementById('flash'),
-    left = area.offsetLeft,
+    left = area.offsetLeft, // CSS positioning
     top  = area.offsetTop,
-    posLeft = 0, 
+    posLeft = 0,          // Steps to right/left
     posTop = 0,
-    tileSize = 32,
-    gridSize = 24,
+    tileSize = 32,        // tile size in height/width -> 32px
+    gridSize = 24,        // grid size 24*24
     
     
 
@@ -32,7 +32,7 @@ window.addEventListener("DOMContentLoaded", function() {
       14,12,13,14,12,13,14,12,15,15,17,17,16,12,13,14,12,13,14,12,13,14,12,13,
       13,14,12,13,14,12,13,14,12,17,17,15,13,14,12,13,14,12,13,14,12,13,14,12,
       12,13,14,12,13,14,12,13,14,12,13,14,12,17,17,12,13,14,12,13,14,12,13,14,
-      14,12,13,14,12,13,14,16,13,14,12,13,14,17,16,16,16,13,14,12,13,14,19,21,
+      14,12,13,14,12,13,14,16,24,14,12,13,14,17,16,16,16,13,14,12,13,14,19,21,
       13,14,12,13,14,12,13,14,12,13,14,17,13,14,12,16,16,12,13,19,18,18,21,21,
       12,13,14,12,13,14,12,13,14,12,13,14,12,13,17,12,13,19,18,21,21,21,21,21,
       14,12,13,14,12,13,14,12,13,14,12,13,14,15,16,14,12,20,21,21,21,21,21,21,
@@ -55,7 +55,7 @@ window.addEventListener("DOMContentLoaded", function() {
       19,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,25,25,10,10,10,10,10,19,
       19,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,12,13,10,10,10,10,19,
       19,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,12,10,10,10,10,10,19,
-      19,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,12,10,10,10,10,10,19,
+      19,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,20,12,10,10,10,10,10,19,
       19,10,10,10,10,10,11,10,10,10,10,10,10,10,10,10,13,10,10,10,10,10,10,19,
       19,10,10,10,10,10,11,10,10,10,10,10,10,10,10,10,13,10,10,10,10,10,10,19,
       19,10,10,10,10,10,11,11,11,12,11,11,10,10,10,10,13,10,10,10,10,10,10,19,
@@ -63,7 +63,7 @@ window.addEventListener("DOMContentLoaded", function() {
       19,10,10,10,10,10,10,10,10,10,10,10,10,10,10,13,10,10,10,10,10,10,10,19,
       19,10,10,10,10,10,10,10,10,10,10,10,10,13,13,10,10,10,10,10,10,10,10,19,
       19,10,10,10,10,10,10,10,10,10,10,10,10,13,13,10,10,10,10,10,10,10,10,19,
-      19,10,10,10,10,10,12,12,11,11,10,10,10,10,10,10,10,10,10,10,10,10,10,19,
+      19,10,10,10,10,10,12,12,18,11,10,10,10,10,10,10,10,10,10,10,10,10,10,19,
       19,10,10,10,10,10,12,12,10,11,13,10,10,10,10,10,10,10,10,10,10,10,10,19,
       19,10,10,10,10,10,12,14,10,10,13,10,10,10,10,10,10,10,10,10,10,10,10,19,
       19,10,10,10,10,10,13,10,13,13,13,10,10,10,10,10,10,10,10,10,10,10,10,19,
@@ -71,7 +71,7 @@ window.addEventListener("DOMContentLoaded", function() {
       19,10,10,10,10,10,11,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,19,
       19,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,19,
       19,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,19,
-      19,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,18,19,
+      19,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,19,
       19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,
     ];
 
@@ -110,8 +110,7 @@ window.addEventListener("DOMContentLoaded", function() {
      function moveIt() {
        rockford.style.left = (area.offsetLeft + posLeft*tileSize + tileSize/2) + 'px';
        rockford.style.top  = (area.offsetTop + posTop*tileSize + tileSize/2) + 'px';      
-      //  console.log("
-      // Moved to: " + rockford.style.left + "x" + rockford.style.top);
+       console.log("Moved to: " + rockford.style.left + "x" + rockford.style.top);
       };
       if(which) { rockford.className='baddie ' + which; }
       
@@ -121,13 +120,34 @@ window.addEventListener("DOMContentLoaded", function() {
         posLeft += moveLeft; 
         posTop  += moveTop;
         moveIt();
+
+      // Opens the door by pulling the rod
+      } else if(gameBlocks[(posLeft+moveLeft)+(posTop+moveTop)*gridSize] == 20) { 
+        area.innerHTML = "<div id='baddie1' class='baddie down'></div>";   // Removes the board, but makes sure the baddie is readded
+        gameBlocks[344] = 10;                 // Removes the door
+        drawGamePlan(gameArea, gameBlocks);   // Redraws the board, with the removed door
+        rockford = document.getElementById('baddie1');
+        moveIt()
+
+      // Plays a sound when trying to enter the closed door
+      } else if(gameBlocks[(posLeft+moveLeft)+(posTop+moveTop)*gridSize] == 18) {
+        let audio = new Audio('sounds/trying-to-open-a-locked-door-104302.mp3');
+        audio.volume = 0.2 //Volumne 0-1
+        audio.play()
+
+      // Plays a sound when arriving to the Emerald, and also giving a Success message 
+      } else if (gameBlocks[(posLeft+moveLeft)+(posTop+moveTop)*gridSize] == 14) {
+        let audio = new Audio('sounds/chaos-emerald-323237.mp3');
+        audio.volume = 0.2 //Volumne 0-1
+        audio.play()
+        alert("Congratz, You have arrived to Emerald City")
       } else {  // Else means the baddie cannot move because of a wall
         console.log('Block detected, cant move.');
       }
-      // console.log("area.offsetLeft", area.offsetLeft);
-      // console.log("area.offsetTop", area.offsetTop);
-      // console.log("posLeft", posLeft)
-      // console.log("posTop", posTop)
+      console.log("area.offsetLeft", area.offsetLeft);
+      console.log("area.offsetTop", area.offsetTop);
+      console.log("posLeft", posLeft)
+      console.log("posTop", posTop)
     };
     console.log('Moving Mickey Mos (Rockford) to initial spot.');  
     move(1, 1, 'down');
