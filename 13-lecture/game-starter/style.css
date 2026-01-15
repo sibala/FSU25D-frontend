@@ -1,0 +1,373 @@
+/**
+ * Import base style
+ */
+/**
+ * Style with LESS.
+ */
+/** --------------------------------------------------------------
+ * Reset. http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126
+ *
+ */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100.01%;
+  font: inherit;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/** --------------------------------------------------------------
+ * HTML5 elements.
+ *
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+  display: inline;
+  zoom: 1;
+}
+audio:not([controls]) {
+  display: none;
+}
+[hidden] {
+  display: none;
+}
+/** --------------------------------------------------------------
+ * The micro clearfix http://nicolasgallagher.com/micro-clearfix-hack/
+ *
+ */
+.wrapper {
+  zoom: 1;
+}
+.wrapper:before,
+.wrapper:after {
+  content: "";
+  display: table;
+}
+.wrapper:after {
+  clear: both;
+}
+/** --------------------------------------------------------------
+ * Typography.
+ * 
+ */
+/* 16px - 100%/1.375 */
+body {
+  color: #222;
+  font: 100.01%/1.375 Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+p {
+  margin-bottom: 22px;
+}
+b,
+strong {
+  font-weight: bold;
+}
+i,
+em {
+  font-style: italic;
+}
+pre,
+code {
+  font: 1em/1.375 monospace;
+}
+/* headers */
+h1 {
+  font-size: 2.375em;
+  line-height: 1.1579;
+  margin-bottom: 22px;
+}
+/* Lists */
+li ul,
+li ol {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0.6875em 1.5em 1.375em 0;
+  padding-left: 1.5em;
+}
+ul {
+  list-style-type: disc;
+}
+ol {
+  list-style-type: decimal;
+}
+/* Tables. Because of the need for padding on TH and TD, the vertical rhythm
+  on table cells has to be 33px, instead of the standard 22px or 44px
+  of other elements. */
+table {
+  margin-bottom: 1.375em;
+  width: 100%;
+}
+caption {
+  text-align: left;
+  font-style: italic;
+}
+thead {
+  border-bottom: 2px solid #222;
+}
+th {
+  vertical-align: bottom;
+  font-weight: bold;
+  text-align: left;
+}
+th,
+td {
+  padding: 5px 10px 5px 5px;
+}
+tbody tr {
+  border-bottom: 1px solid #eee;
+}
+tbody tr:hover {
+  color: #000;
+}
+tfoot {
+  font-style: italic;
+}
+/** --------------------------------------------------------------
+ * CSS3 mixins.
+ * 
+ */
+/** --------------------------------------------------------------
+ * Colors.
+ * 
+ */
+.black {
+  color: #000;
+}
+.blue {
+  color: #049cdb;
+}
+.green {
+  color: #46a546;
+}
+.red {
+  color: #9d261d;
+}
+.yellow {
+  color: #ffc40d;
+}
+.orange {
+  color: #f89406;
+}
+/** --------------------------------------------------------------
+ * Page layout.
+ * 
+ */
+body {
+  max-width: 940px;
+  margin: 8px auto;
+}
+/** --------------------------------------------------------------
+ * Boxes.
+ * 
+ */
+#flash {
+  margin: 2em auto;
+  background-color: rgba(238, 238, 238, 0.95);
+  min-height: 10em;
+  border: 1px solid #999;
+  padding: 1em;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 5px 5px #555;
+  -moz-box-shadow: 5px 5px 5px 5px #555;
+  box-shadow: 5px 5px 5px 5px #555;
+}
+/** --------------------------------------------------------------
+ * Footer.
+ * 
+ */
+#footer {
+  border-top: 1px solid #999;
+  font-size: smaller;
+  color: #999;
+  margin-top: 22px;
+  padding-top: 0.5em;
+}
+#footer a {
+  color: #999;
+  text-decoration: none;
+}
+#footer a:hover {
+  color: #333333;
+  text-decoration: underline;
+}
+/**
+ * Here comes specific style for a certain test program.
+ */
+#flash {
+  width: 768px;
+  height: 768px;
+}
+#baddie1 {
+  position: absolute;
+}
+.baddie {
+  z-index: 10;
+  width: 32px;
+  height: 32px;
+  background-image: url(img/sprite_mickey_mos_mini.png);
+  background-repeat: no-repeat;
+  -webkit-transition-property: left,top;
+  -moz-transition-property: left,top;
+  -ms-transition-property: left,top;
+  -o-transition-property: left,top;
+  transition-property: left,top;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -ms-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+.baddie.up {background-position: -96px 0;}
+.baddie.down {background-position: -64px 0;}
+.baddie.left {background-position: -32px 0;}
+.baddie.right {background-position: 0 0;}
+/** --------------------------------------------------------------
+ * Boulder Dash Gameplan
+ * 
+ */
+.tile, .t, .block, .b{width:32px;height:32px;float:left;background-repeat:no-repeat;}
+.t12{background-image:url(img/tiles/floor/grass_0_old.png);}
+.t13{background-image:url(img/tiles/floor/grass_1_old.png);}
+.t14{background-image:url(img/tiles/floor/grass_2_old.png);}
+.t15{background-image:url(img/tiles/floor/grass_flowers_red_3_old.png);}
+.t16{background-image:url(img/tiles/floor/grass_flowers_blue_3_old.png);}
+.t17{background-image:url(img/tiles/floor/grass_flowers_yellow_3_old.png);}
+.t18{background-image:url(img/tiles/floor/grass_north_old.png);}
+.t19{background-image:url(img/tiles/floor/grass_northwest_old.png);}
+.t20{background-image:url(img/tiles/floor/grass_west_old.png);}
+.t21{background-image:url(img/tiles/floor/grass_full_old.png);}
+.t22{background-image:url(img/tiles/floor/grass_southwest_old.png);}
+.t23{background-image:url(img/tiles/floor/grass_south_old.png);}
+
+.b11{background-image:url(img/tiles/wall/metal_wall.png);}
+.b12{background-image:url(img/tiles/wall/crystal_wall02.png);}
+.b13{background-image:url(img/tiles/wall/mirrored_wall_old.png);}
+.b14{background-image:url(img/tiles/wall/green_crystal_wall.png);background-color:green;}
+.b17{background-image:url(img/tiles/passage/open_door.png);background-color:#bbb;}
+.b18{background-image:url(img/tiles/passage/closed_door.png);}
+.b19{background-image:url(img/tiles/wall/brick_brown-vines_1.png);}
