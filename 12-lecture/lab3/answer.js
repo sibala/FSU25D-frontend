@@ -1,7 +1,7 @@
 (function (dbwebb) {
 "use strict";
 
-var ANSWER = "Replace this text with the variable holding the answer.";
+let ANSWER = null;
 
 console.log("Ready to begin.");
 

@@ -1,7 +1,7 @@
 (function (dbwebb) {
 "use strict";
 
-var ANSWER = null;
+let ANSWER = null;
 
 console.log("Ready to begin.");
 
