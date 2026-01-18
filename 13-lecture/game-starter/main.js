@@ -141,7 +141,9 @@ window.addEventListener("DOMContentLoaded", function() {
         audio.volume = 0.2 //Volumne 0-1
         audio.play()
         alert("Congratz, You have arrived to Emerald City")
-      } else {  // Else means the baddie cannot move because of a wall
+
+      // Else means the baddie cannot move because of a wall
+      } else {  
         console.log('Block detected, cant move.');
       }
       console.log("area.offsetLeft", area.offsetLeft);
