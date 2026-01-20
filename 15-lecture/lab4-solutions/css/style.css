@@ -1,0 +1,30 @@
+h1 {
+    text-align: center;
+}
+
+.content {
+    margin: 0 auto;
+    width: 800px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.box {
+	border: 1px solid #333;
+	width: 100px;
+	height: 100px;
+	padding: 10px;
+}
+
+.green-box {
+	background-color: lightgreen;
+	border: 1px solid #333;
+	width: 100px;
+	height: 100px;
+	padding: 10px;
+}
+
+
+/* main#content > section.box {
+	border: 4px solid orange;
+} */
