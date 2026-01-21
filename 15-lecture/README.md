@@ -10,9 +10,6 @@
 - Do exercises in [lab5](lab5) 
 
 
-## 3. Refactor the game-starter with objects or/and classes
-- [game-starter-with-objects](game-starter-with-objects)
-
 
 ## Reading
 - [Objects](https://www.w3schools.com/js/js_objects.asp)
