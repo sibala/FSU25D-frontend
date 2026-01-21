@@ -10,7 +10,6 @@ printName(firstName);
 
 
 
-
 console.log('############# Object intro ############');
 // If working with ONE object of the same sort, objects right away. No need for classes (blueprints)
 let house = {
@@ -29,7 +28,7 @@ let house = {
 // "this" in the global context, which is the window object in browsers
 console.log(this)
 // window-object is the mothership, from which all inbuilt functions/objects/whatever comes from
-// As shown in the 2 examples below. Note that its not needed to ad window. in syntaxt because JS handles this for us :)
+// As shown in the 2 examples below. Note that its not needed to add window. in syntaxt because JS handles this for us :)
 // window.alert('Hej')
 // console.log(window.document.getElementById('title'))
 
