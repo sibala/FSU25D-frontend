@@ -1,0 +1,42 @@
+#content {
+	display: flex;
+	width: 700px;
+	margin: 0 auto;
+}
+
+section {
+	margin: 10px;
+	flex: 1 1 auto;
+}
+
+.box {
+	display: flex;
+	flex-flow: row wrap;
+	border: 1px solid #333;
+	height: 300px;
+	width: 300px;
+	padding: 5px;
+}
+
+.inner-box {
+	border: 1px solid #333;
+	flex: 1 1 100%;
+	margin-bottom: 3px;
+	padding: 5px;
+}
+
+.yellow {
+	background-color: yellow;
+}
+
+.sky-blue {
+	background-color: skyblue;
+}
+
+.light-green {
+	background-color: lightgreen;
+}
+
+.beige {
+	background-color: beige;
+}
