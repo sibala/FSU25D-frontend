@@ -12,7 +12,7 @@
 
 
 ## Reading
-- [Promises Tutorial](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
+- [Promises Tutorial](https://www.freecodecamp.org/news/javascript-es6-promises-for-beginners-resolve-reject-and-chaining-explained/)
 - [AJAX with fetch (dokumentation från MDN)](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
 - [async/await (dokumentation från MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)
 - [try/catch (dokumentation från MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch)
