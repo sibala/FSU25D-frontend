@@ -17,11 +17,6 @@ w# Instructions
 ## 4 Present Assignment (Kunskapskontroll 3)
 - Found in Itslearning
 
-## 5 TypeScript Intro (Will be recorded and given access to though itsLearning)
-- Study the installation process and code [ts-intro](ts-intro)
-- Adding TS to the blog-solution [blog-solution-part3-typescript](blog-solution-part3-typescript)
-
-
 
 ## Reading
 - [HTML/JS dataset](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset)
@@ -32,9 +27,3 @@ w# Instructions
 - [JS module export](https://www.w3schools.com/js/js_modules_export.asp)
 - [JS module import](https://www.w3schools.com/js/js_modules_import.asp)
 - [JS namespace](https://www.w3schools.com/js/js_modules_namespace.asp)
-
-<br />
-
-- TypeScript reading instructions coming soon
-
-
