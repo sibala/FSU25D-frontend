@@ -4,14 +4,14 @@
 - [Download and install NodeJS](https://nodejs.org/en/download)
 
 
-## 2 Install and configure TypeScript
-- npm init -y                                   // Creates a package.json file
-- npm install typescript --save-dev             // Installs TypeScript in your project
-- tsc --init                                    // Creates a tsconfig.json file
+## 2. Install and configure TypeScript
+- `npm init -y` - Creates a package.json file
+- `npm install typescript --save-dev` - Installs TypeScript in your project
+- `tsc --init` - Creates a tsconfig.json file
 - Configure TypeScript through tsconfig.json (See video recording)
 
 
-## 3 TypeScript Intro
+## 3. TypeScript Intro
 - [ts-intro](ts-intro)
 - Adding TS to the blog-solution [blog-solution-part3-typescript](blog-solution-part3-typescript)
 
