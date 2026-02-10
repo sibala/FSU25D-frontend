@@ -7,7 +7,7 @@
 ## 2. Install and configure TypeScript
 - `npm init -y` - Creates a package.json file
 - `npm install typescript --save-dev` - Installs TypeScript in your project
-- `tsc --init` - Creates a tsconfig.json file
+- `npx tsc  --init` - Creates a tsconfig.json file
 - Configure TypeScript through tsconfig.json (See video recording)
 
 
