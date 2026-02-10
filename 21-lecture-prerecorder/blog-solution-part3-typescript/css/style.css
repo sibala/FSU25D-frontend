@@ -1,0 +1,94 @@
+/* Prompt 1: generate a minimalistic style for the blog posts, with centered layout */
+/* Prompt 2: center and style the same for the header with h1 */
+body {
+    max-width: 700px;
+    margin: 4rem auto;
+    padding: 0 1.5rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.8;
+    color: #2d3436;
+}
+
+.blog-post h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    color: #1a1a1a;
+}
+
+.blog-post p {
+    margin-bottom: 1.5rem;
+}
+
+.blog-post img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin: 2rem 0;
+}
+
+.blog-post .metadata {
+    font-size: 0.9rem;
+    color: #636e72;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.blog-post h2 a {
+    text-decoration: none;
+    color: #333;
+}
+
+.blog-post h2:hover {
+    opacity: 0.7;
+}
+
+
+/* Prompt 3: Style the backbutton with id=back-button according to the rest of the minimalistic styling */
+#back-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 1px solid #dfe6e9;
+    color: #2d3436;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+/* Prompt 4: Make the post image aligned with the rest of the layout, add rounded corners  */
+#blog-post img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 2rem auto;
+    display: block;
+}
+
+
+/* Prompt 5: Style the tags as labels */
+#blog-post .tags {
+    margin-bottom: 2rem;
+}
+
+#blog-post .tag {
+    display: inline-block;
+    background: #b2bec3;
+    color: #2d3436;
+    font-size: 0.85rem;
+    padding: 0.2em 0.8em;
+    border-radius: 2em;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+#blog-post .tag:hover {
+    background: #636e72;
+    color: #fff;
+}
