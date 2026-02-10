@@ -8,6 +8,7 @@
 - `npm init -y` - Creates a package.json file
 - `npm install typescript --save-dev` - Installs TypeScript in your project
 - `npx tsc  --init` - Creates a tsconfig.json file
+- `npx tsc  --watch` - Continues to compile TS-files to JS-files, through out the coding session
 - Configure TypeScript through tsconfig.json (See video recording)
 
 
